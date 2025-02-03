@@ -3,10 +3,8 @@ import streamlit as st
 from groq import Groq
 from fpdf import FPDF  # For PDF generation
 
-api = "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"
-
 # --- Groq API Setup ---
-client = Groq(api_key=api)
+client = Groq( api_key = api_key_here )
 
 # Function to get code from StarCoder model
 def generate_code(summary, language):
